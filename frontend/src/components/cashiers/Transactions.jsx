@@ -22,7 +22,7 @@ import axios from 'axios'
 import BankContext from '../../context/BankContext'
 
 const Transactions = () => {
-    const { BACKEND_URL } = useContext(BankContext);
+    const { BACKEND_URL, environment } = useContext(BankContext);
     const [transactions, setTransactions] = useState([])
     const [loading, setLoading] = useState(true)
     const [refreshing, setRefreshing] = useState(false)
@@ -766,7 +766,7 @@ const Transactions = () => {
                                     </div>
 
                                     <p className="font-semibold text-gray-900">
-                                        {selectedTransaction.blockchainNetwork || 'Ganache'}
+                                        {selectedTransaction.blockchainNetwork || environment === "production" ? "Sepolia" : "Ganache"}
                                     </p>
                                 </div>
 

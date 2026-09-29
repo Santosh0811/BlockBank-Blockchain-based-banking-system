@@ -3,10 +3,12 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
+import BankState from './context/BankState.jsx'
 
 createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
-     <Toaster
+  <BrowserRouter>
+    <BankState>
+      <Toaster
         position="top-right"
         toastOptions={{
           duration: 3500,
@@ -18,6 +20,7 @@ createRoot(document.getElementById('root')).render(
           },
         }}
       />
-        <App />
-    </BrowserRouter>,
+      <App />
+    </BankState>
+  </BrowserRouter>,
 )

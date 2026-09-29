@@ -488,26 +488,26 @@ const Home = () => {
                     <div className="mx-auto max-w-3xl text-center">
 
                         <span className="
-                inline-flex items-center gap-2
-                rounded-full
-                border border-blue-400/20
-                bg-blue-500/10
-                px-4 py-2
-                text-xs font-semibold
-                uppercase tracking-wider
-                text-blue-300
-            ">
+                            inline-flex items-center gap-2
+                            rounded-full
+                            border border-blue-400/20
+                            bg-blue-500/10
+                            px-4 py-2
+                            text-xs font-semibold
+                            uppercase tracking-wider
+                            text-blue-300
+                        ">
                             <FiLayers />
                             About BlockBank
                         </span>
 
                         <h2 className="
-                mt-5
-                text-3xl font-bold
-                tracking-tight
-                text-white
-                md:text-4xl
-            ">
+                            mt-5
+                            text-3xl font-bold
+                            tracking-tight
+                            text-white
+                            md:text-4xl
+                        ">
                             Secure Banking Powered by
                             <span className="text-blue-400">
                                 {' '}Blockchain
@@ -515,11 +515,11 @@ const Home = () => {
                         </h2>
 
                         <p className="
-                mt-5
-                text-sm leading-7
-                text-white/60
-                md:text-base
-            ">
+                            mt-5
+                            text-sm leading-7
+                            text-white/60
+                            md:text-base
+                        ">
                             BlockBank combines modern web technologies with
                             blockchain technology to provide secure account
                             management, financial transactions, and transparent
@@ -534,39 +534,39 @@ const Home = () => {
                     {/* ================================================= */}
 
                     <div className="
-            mt-14
-            rounded-2xl
-            border border-blue-400/20
-            bg-blue-500/5
-            p-6 md:p-8
-        ">
+                        mt-14
+                        rounded-2xl
+                        border border-blue-400/20
+                        bg-blue-500/5
+                        p-6 md:p-8
+                    ">
 
                         <div className="flex items-center gap-4">
 
                             <div className="
-                    flex h-12 w-12 shrink-0
-                    items-center justify-center
-                    rounded-xl
-                    bg-blue-500/10
-                    text-blue-400
-                ">
+                                flex h-12 w-12 shrink-0
+                                items-center justify-center
+                                rounded-xl
+                                bg-blue-500/10
+                                text-blue-400
+                            ">
                                 <FiGlobe size={22} />
                             </div>
 
                             <div>
                                 <p className="
-                        text-xs uppercase
-                        tracking-wider
-                        text-white/40
-                    ">
+                                    text-xs uppercase
+                                    tracking-wider
+                                    text-white/40
+                                ">
                                     Current Environment
                                 </p>
 
                                 <h3 className="
-                        mt-1
-                        text-xl font-bold
-                        text-white
-                    ">
+                                    mt-1
+                                    text-xl font-bold
+                                    text-white
+                                ">
                                     {environmentInfo.name}
                                 </h3>
                             </div>
@@ -574,11 +574,11 @@ const Home = () => {
                         </div>
 
                         <p className="
-                mt-5
-                max-w-4xl
-                text-sm leading-6
-                text-white/60
-            ">
+                            mt-5
+                            max-w-4xl
+                            text-sm leading-6
+                            text-white/60
+                        ">
                             {environmentInfo.description}
                         </p>
 
@@ -594,17 +594,17 @@ const Home = () => {
                         <div className="mb-6">
 
                             <h3 className="
-                    text-2xl font-bold
-                    text-white
-                ">
+                                text-2xl font-bold
+                                text-white
+                            ">
                                 System Infrastructure
                             </h3>
 
                             <p className="
-                    mt-2
-                    text-sm
-                    text-white/40
-                ">
+                                mt-2
+                                text-sm
+                                text-white/40
+                            ">
                                 Technologies and services used by the current
                                 BlockBank environment.
                             </p>
@@ -657,45 +657,45 @@ const Home = () => {
                     {/* ================================================= */}
 
                     <div className="
-            mt-16
-            rounded-2xl
-            border border-white/10
-            bg-white/5
-            p-6 md:p-8
-        ">
+                        mt-16
+                        rounded-2xl
+                        border border-white/10
+                        bg-white/5
+                        p-6 md:p-8
+                    ">
 
                         <h3 className="
-                text-2xl font-bold
-                text-white
-            ">
+                            text-2xl font-bold
+                            text-white
+                        ">
                             How BlockBank Works
                         </h3>
 
                         <p className="
-                mt-2
-                text-sm
-                text-white/40
-            ">
+                            mt-2
+                            text-sm
+                            text-white/40
+                        ">
                             A transaction moves through the application,
                             backend, smart contract and blockchain.
                         </p>
 
 
                         <div className="
-                mt-8
-                grid grid-cols-2
-                gap-8
-                md:grid-cols-4
-            ">
+                            mt-8
+                            grid grid-cols-2
+                            gap-8
+                            md:grid-cols-4
+                        ">
 
                             <ProcessStep
                                 number="01"
                                 icon={FiDatabase}
                                 title="Account"
                                 description="
-                        Customer and banking information is
-                        securely managed by the application.
-                    "
+                                    Customer and banking information is
+                                    securely managed by the application.
+                                "
                             />
 
                             <ProcessStep
@@ -703,9 +703,9 @@ const Home = () => {
                                 icon={FiArrowRight}
                                 title="Transaction"
                                 description="
-                        Deposits, withdrawals and transfers
-                        are initiated through the banking system.
-                    "
+                                    Deposits, withdrawals and transfers
+                                    are initiated through the banking system.
+                                "
                             />
 
                             <ProcessStep
@@ -713,9 +713,9 @@ const Home = () => {
                                 icon={FiCode}
                                 title="Smart Contract"
                                 description="
-                        The Solidity smart contract processes
-                        the financial blockchain operation.
-                    "
+                                    The Solidity smart contract processes
+                                    the financial blockchain operation.
+                                "
                             />
 
                             <ProcessStep
@@ -723,9 +723,9 @@ const Home = () => {
                                 icon={FiCheckCircle}
                                 title="Verification"
                                 description="
-                        The blockchain records the transaction
-                        and provides an immutable record.
-                    "
+                                    The blockchain records the transaction
+                                    and provides an immutable record.
+                                "
                             />
 
                         </div>
@@ -792,10 +792,10 @@ const Home = () => {
                         </h3>
 
                         <div className="
-                mt-6
-                flex flex-wrap
-                gap-3
-            ">
+                            mt-6
+                            flex flex-wrap
+                            gap-3
+                        ">
 
                             {technologyStack.map((technology) => {
 
@@ -805,15 +805,15 @@ const Home = () => {
                                     <div
                                         key={technology.name}
                                         className="
-                                flex items-center gap-2
-                                rounded-lg
-                                border border-blue-400/20
-                                bg-blue-500/10
-                                px-4 py-2.5
-                                text-sm
-                                font-medium
-                                text-blue-200
-                            "
+                                            flex items-center gap-2
+                                            rounded-lg
+                                            border border-blue-400/20
+                                            bg-blue-500/10
+                                            px-4 py-2.5
+                                            text-sm
+                                            font-medium
+                                            text-blue-200
+                                        "
                                     >
                                         <Icon size={16} />
                                         {technology.name}
@@ -831,36 +831,36 @@ const Home = () => {
                     {/* ================================================= */}
 
                     <div className="
-            mt-16
-            grid grid-cols-2
-            gap-5
-            md:grid-cols-3
-        ">
+                        mt-16
+                        grid grid-cols-2
+                        gap-5
+                        md:grid-cols-3
+                    ">
 
                         <div className="
-                rounded-xl
-                border border-white/10
-                bg-white/5
-                p-6
-            ">
+                            rounded-xl
+                            border border-white/10
+                            bg-white/5
+                            p-6
+                        ">
                             <FiShield
                                 className="text-blue-400"
                                 size={24}
                             />
 
                             <h4 className="
-                    mt-4
-                    font-semibold
-                    text-white
-                ">
+                                mt-4
+                                font-semibold
+                                text-white
+                            ">
                                 Secure
                             </h4>
 
                             <p className="
-                    mt-2
-                    text-sm leading-6
-                    text-white/50
-                ">
+                                mt-2
+                                text-sm leading-6
+                                text-white/50
+                            ">
                                 Authentication, authorization and protected
                                 application data help secure the banking system.
                             </p>
@@ -868,29 +868,29 @@ const Home = () => {
 
 
                         <div className="
-                rounded-xl
-                border border-white/10
-                bg-white/5
-                p-6
-            ">
+                            rounded-xl
+                            border border-white/10
+                            bg-white/5
+                            p-6
+                        ">
                             <FiLock
                                 className="text-blue-400"
                                 size={24}
                             />
 
                             <h4 className="
-                    mt-4
-                    font-semibold
-                    text-white
-                ">
+                                mt-4
+                                font-semibold
+                                text-white
+                            ">
                                 Immutable
                             </h4>
 
                             <p className="
-                    mt-2
-                    text-sm leading-6
-                    text-white/50
-                ">
+                                mt-2
+                                text-sm leading-6
+                                text-white/50
+                            ">
                                 Blockchain transaction records provide a
                                 tamper-resistant history of financial activity.
                             </p>
@@ -898,29 +898,29 @@ const Home = () => {
 
 
                         <div className="
-                rounded-xl
-                border border-white/10
-                bg-white/5
-                p-6
-            ">
+                            rounded-xl
+                            border border-white/10
+                            bg-white/5
+                            p-6
+                        ">
                             <FiCheckCircle
                                 className="text-blue-400"
                                 size={24}
                             />
 
                             <h4 className="
-                    mt-4
-                    font-semibold
-                    text-white
-                ">
+                                mt-4
+                                font-semibold
+                                text-white
+                            ">
                                 Transparent
                             </h4>
 
                             <p className="
-                    mt-2
-                    text-sm leading-6
-                    text-white/50
-                ">
+                                mt-2
+                                text-sm leading-6
+                                text-white/50
+                            ">
                                 Blockchain transaction identifiers provide
                                 verifiable records of completed transactions.
                             </p>

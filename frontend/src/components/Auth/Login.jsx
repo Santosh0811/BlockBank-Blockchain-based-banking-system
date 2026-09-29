@@ -13,7 +13,7 @@ import axios from 'axios'
 import BankContext from '../../context/BankContext'
 
 const Login = () => {
-    const { BACKEND_URL, checkLogin, checkingAuth } = useContext(BankContext);
+    const { BACKEND_URL, checkLogin, setProgress } = useContext(BankContext);
     const { loading, setLoading } = useContext(BankContext)
     const [showPassword, setShowPassword] = useState(false)
 
@@ -35,7 +35,7 @@ const Login = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault()
-
+        setProgress(45);
         try {
             setLoading(true)
 
@@ -45,6 +45,7 @@ const Login = () => {
                     withCredentials: true
                 }
             )
+            setProgress(75)
 
             if (response.status === 200) {
                 toast.success(response.data.message)
@@ -66,7 +67,8 @@ const Login = () => {
             toast.error(message)
 
         } finally {
-            setLoading(false)
+            setLoading(false);
+            setProgress(100);
         }
     }
 
@@ -74,15 +76,15 @@ const Login = () => {
         checkLogin()
     }, [navigate])
 
-    if (checkingAuth) {
-        return (
-            <div className="flex min-h-screen items-center justify-center">
-                <p className="text-gray-500">
-                    Checking login...
-                </p>
-            </div>
-        )
-    }
+    // if (checkingAuth) {
+    //     return (
+    //         <div className="flex min-h-screen items-center justify-center">
+    //             <p className="text-gray-500">
+    //                 Checking login...
+    //             </p>
+    //         </div>
+    //     )
+    // }
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-100 via-white to-blue-100 flex items-center justify-center px-4 py-4">

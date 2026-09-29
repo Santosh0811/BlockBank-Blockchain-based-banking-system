@@ -1493,7 +1493,7 @@ const Transactions = () => {
                                                                     text-[10px]
                                                                     text-gray-400
                                                                 ">
-                                                                    {transaction.blockchainNetwork || 'Ganache'}
+                                                                    {transaction.blockchainNetwork || environment === "production" ? "Sepolia" : "Ganache"}
 
                                                                     <LuExternalLink size={10} />
                                                                 </p>

@@ -46,7 +46,7 @@ const Transactions = () => {
     const [selectedTransaction, setSelectedTransaction] =
         useState(null)
 
-    // Blockchain transaction fetched from Ganache
+    // Blockchain transaction fetched from Ganache || Sepolia
     const [blockchainTransaction, setBlockchainTransaction] =
         useState(null)
 
@@ -1158,7 +1158,7 @@ const Transactions = () => {
                                             </h3>
 
                                             <p className="text-xs text-slate-400">
-                                                Data retrieved directly from BlockBank on Ganache
+                                                Data retrieved directly from BlockBank on {environment === "production" ? "Sepolia" : "Ganache"}
                                             </p>
                                         </div>
                                     </div>

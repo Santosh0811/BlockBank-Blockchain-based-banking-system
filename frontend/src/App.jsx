@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Login from './components/Auth/Login'
 import CustomerPage from './components/customers/CustomerPage'
-import BankState from './context/BankState'
 
 import CreateCashier from './components/Admins/CreateCashier'
 import CashierPage from './components/cashiers/CashierPage'
@@ -14,11 +13,19 @@ import VerifyOTP from './components/Auth/VerifyOTP'
 import ResetPassword from './components/Auth/ResetPassword'
 import VerifyLoginOTP from './components/Auth/VerifyLoginOTP'
 import AdminPage from './components/Admins/AdminPage'
+import LoadingBar from "react-top-loading-bar";
+import BankContext from './context/BankContext'
 
 const App = () => {
+  const { progress, setProgress } = useContext(BankContext);
+
   return (
-    <BankState>
-     
+    <>
+      <LoadingBar
+        color="red"
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
@@ -35,7 +42,7 @@ const App = () => {
         <Route path="/cashier/dashboard" element={<CashierPage />} />
         <Route path="/cashier/create-customer" element={<CreateCustomer />} />
       </Routes>
-    </BankState>
+    </>
   )
 }
 
