@@ -161,7 +161,7 @@ const AdminQuickActions = ({
                             </h3>
 
                             <p className="text-sm text-slate-500">
-                                View customer transactions
+                                View customer & cashier transactions
                             </p>
 
                         </div>
