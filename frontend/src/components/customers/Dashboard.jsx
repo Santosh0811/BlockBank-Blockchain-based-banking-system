@@ -250,7 +250,7 @@ const Dashboard = () => {
 
                         <div
                             onClick={() => { setCustomerPage("Transfer Money") }}
-                            className="flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                            className="flex flex-col lg:flex-row lg:items-center justify-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
                         >
                             <div className="flex h-8 w-8 p-1 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
                                 <LuSend />
@@ -268,7 +268,7 @@ const Dashboard = () => {
 
                         <div
                             onClick={() => { setCustomerPage("Transactions") }}
-                            className="flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                            className="flex flex-col lg:flex-row lg:items-center justify-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
                         >
                             <div className="flex h-8 w-8 p-1 items-center justify-center rounded-xl bg-purple-100 text-purple-600">
                                 <LuReceipt />
@@ -286,7 +286,7 @@ const Dashboard = () => {
 
                         <div
                             onClick={() => { setCustomerPage("Profile") }}
-                            className="flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                            className="flex flex-col lg:flex-row lg:items-center justify-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
                         >
                             <div className="flex h-8 w-8 p-1 items-center justify-center rounded-xl bg-green-100 text-green-600">
                                 <LuUser />
@@ -302,7 +302,7 @@ const Dashboard = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm">
+                        <div className="flex flex-col lg:flex-row lg:items-center justify-center gap-4 rounded-2xl bg-white p-5 shadow-sm">
                             <div className="flex h-8 w-8 p-1 items-center justify-center rounded-xl bg-orange-100 text-orange-600">
                                 <LuBlocks />
                             </div>

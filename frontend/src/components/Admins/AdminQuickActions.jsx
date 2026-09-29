@@ -21,7 +21,7 @@ const AdminQuickActions = ({
             </h2>
 
 
-            <div className="grid gap-4 grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
 
 
                 {/* Create Cashier */}
@@ -35,7 +35,7 @@ const AdminQuickActions = ({
                     className="group rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-md"
                 >
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center justify-center gap-4">
 
                         <div className="flex h-8 w-8 px-2 py-2 lg:px-0 lg:py-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
 
@@ -72,7 +72,7 @@ const AdminQuickActions = ({
                     className="group rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-md"
                 >
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center justify-center gap-4">
 
                         <div className="flex h-8 w-8 px-2 py-2 lg:px-0 lg:py-0 items-center justify-center rounded-xl bg-purple-100 text-purple-600">
 
@@ -109,7 +109,7 @@ const AdminQuickActions = ({
                     className="group rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-md"
                 >
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center justify-center gap-4">
 
                         <div className="flex h-8 w-8 px-2 py-2 lg:px-0 lg:py-0 items-center justify-center rounded-xl bg-green-100 text-green-600">
 
@@ -145,7 +145,7 @@ const AdminQuickActions = ({
                     className="group rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-md"
                 >
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center justify-center gap-4">
 
                         <div className="flex h-8 w-8 px-2 py-2 lg:px-0 lg:py-0 items-center justify-center rounded-xl bg-green-100 text-yellow-600">
 
